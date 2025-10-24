@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ai-code-reviewer" type="QuarkusMavenBridge">
+    <option name="jreName" />
+    <option name="profiles" />
+    <option name="vmOptions" />
+    <option name="workingDir" value="C:\Users\bcvi\ai-code-reviewer" />
+    <method v="2" />
+  </configuration>
+</component>
