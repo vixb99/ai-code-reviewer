@@ -16,15 +16,9 @@ jobs:
         uses: qodo-ai/pr-agent@main
         env:
           GITHUB_TOKEN: ${{ secrets.HUB_TOKEN }}
-          config.model: "gemini-2.5-flash"
-          config.fallback_models: '["gemini-2.5-flash"]'
+          config.model: "gemini/gemini-1.5-flash"
+          config.fallback_models: '["gemini/gemini-1.5-flash"]'
           pr_reviewer.extra_instructions: "Focus on Java and Quarkus best practices, type hints, and docstrings."
-          pr_code_suggestions.num_code_suggestions: "8"
-          pr_code_suggestions.suggestions_score_threshold: "7"
-          config.large_patch_policy: "clip"
-          config.max_model_tokens: "32000"
-          config.patch_extra_lines_before: "3"
-          config.patch_extra_lines_after: "1"
           GOOGLE_AI_STUDIO.GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           github_action_config.auto_review: "true"
           github_action_config.auto_describe: "true"
